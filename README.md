@@ -1,5 +1,5 @@
 # MZItemInMoreButton
-#仿微信更多tabBarItem
+#仿微博更多tabBarItem
 先上图
 ![image](https://github.com/MZChangchun/MZItemInMoreButton/blob/master/Untitled.gif)
 
@@ -10,7 +10,7 @@
 
 #优点
 1.再也不用担心使用`hidesBottomBarWhenPushed=YES;`和`hidesBottomBarWhenPushed=NO；`的时候出现那些奇怪的bug了    
-2.more里面的按钮点击以后，和微信不一样的是视图控制器还是在`UITabBarController`中    
+2.more里面的按钮点击以后，和微博不一样的是视图控制器还是在`UITabBarController`中    
 3.自动布局，允许两排，多的自动删除     
 缺点：     
 最多只允许加载两排。后期会继续优化，希望有伙伴帮助优化
