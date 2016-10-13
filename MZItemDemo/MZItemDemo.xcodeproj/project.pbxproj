@@ -14,11 +14,11 @@
 		395E2ACC1DAE0FC8009A8250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395E2ACB1DAE0FC8009A8250 /* Assets.xcassets */; };
 		395E2ACF1DAE0FC8009A8250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395E2ACD1DAE0FC8009A8250 /* LaunchScreen.storyboard */; };
 		395E2ADB1DAE0FE7009A8250 /* MZItemInMoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 395E2AD81DAE0FE7009A8250 /* MZItemInMoreButton.m */; };
-		395E2ADC1DAE0FE7009A8250 /* MZRotateTabbarMoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 395E2ADA1DAE0FE7009A8250 /* MZRotateTabbarMoreButton.m */; };
 		395E2AE41DAE0FF9009A8250 /* DemoTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395E2ADE1DAE0FF9009A8250 /* DemoTabbarController.m */; };
 		395E2AE51DAE0FF9009A8250 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395E2AE01DAE0FF9009A8250 /* FirstViewController.m */; };
 		395E2AE61DAE0FF9009A8250 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395E2AE11DAE0FF9009A8250 /* FirstViewController.xib */; };
 		395E2AE71DAE0FF9009A8250 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395E2AE31DAE0FF9009A8250 /* SecondViewController.m */; };
+		39C9376E1DAF195600DD54B3 /* MZRotateTabbarMoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C9376D1DAF195600DD54B3 /* MZRotateTabbarMoreButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,6 @@
 		395E2AD01DAE0FC8009A8250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395E2AD71DAE0FE7009A8250 /* MZItemInMoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZItemInMoreButton.h; sourceTree = "<group>"; };
 		395E2AD81DAE0FE7009A8250 /* MZItemInMoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZItemInMoreButton.m; sourceTree = "<group>"; };
-		395E2AD91DAE0FE7009A8250 /* MZRotateTabbarMoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRotateTabbarMoreButton.h; sourceTree = "<group>"; };
-		395E2ADA1DAE0FE7009A8250 /* MZRotateTabbarMoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRotateTabbarMoreButton.m; sourceTree = "<group>"; };
 		395E2ADD1DAE0FF9009A8250 /* DemoTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTabbarController.h; sourceTree = "<group>"; };
 		395E2ADE1DAE0FF9009A8250 /* DemoTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTabbarController.m; sourceTree = "<group>"; };
 		395E2ADF1DAE0FF9009A8250 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -43,6 +41,8 @@
 		395E2AE11DAE0FF9009A8250 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		395E2AE21DAE0FF9009A8250 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		395E2AE31DAE0FF9009A8250 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		39C9376C1DAF195600DD54B3 /* MZRotateTabbarMoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRotateTabbarMoreButton.h; sourceTree = "<group>"; };
+		39C9376D1DAF195600DD54B3 /* MZRotateTabbarMoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRotateTabbarMoreButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +107,10 @@
 		395E2AD61DAE0FE7009A8250 /* MZTabbarMoreButton */ = {
 			isa = PBXGroup;
 			children = (
+				39C9376C1DAF195600DD54B3 /* MZRotateTabbarMoreButton.h */,
+				39C9376D1DAF195600DD54B3 /* MZRotateTabbarMoreButton.m */,
 				395E2AD71DAE0FE7009A8250 /* MZItemInMoreButton.h */,
 				395E2AD81DAE0FE7009A8250 /* MZItemInMoreButton.m */,
-				395E2AD91DAE0FE7009A8250 /* MZRotateTabbarMoreButton.h */,
-				395E2ADA1DAE0FE7009A8250 /* MZRotateTabbarMoreButton.m */,
 			);
 			path = MZTabbarMoreButton;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 				395E2AE41DAE0FF9009A8250 /* DemoTabbarController.m in Sources */,
 				395E2AE71DAE0FF9009A8250 /* SecondViewController.m in Sources */,
 				395E2AC11DAE0FC8009A8250 /* main.m in Sources */,
+				39C9376E1DAF195600DD54B3 /* MZRotateTabbarMoreButton.m in Sources */,
 				395E2ADB1DAE0FE7009A8250 /* MZItemInMoreButton.m in Sources */,
-				395E2ADC1DAE0FE7009A8250 /* MZRotateTabbarMoreButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +352,7 @@
 				395E2AD51DAE0FC8009A8250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

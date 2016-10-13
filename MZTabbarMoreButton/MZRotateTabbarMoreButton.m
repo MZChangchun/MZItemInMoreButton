@@ -48,7 +48,9 @@
 
 
 @interface MZMoreView()
-
+{
+    CGFloat downTime;
+}
 @property (nonatomic, strong)UIButton * cancelButton;
 @property (nonatomic, strong)NSMutableArray * array;
 
@@ -65,6 +67,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.beginNumber = 0;
+        downTime = 0;
         self.cancelButton = [[UIButton alloc] init];
         [self.cancelButton setImage:[UIImage imageNamed:@"chooser-button-tab"] forState:UIControlStateNormal];
         self.cancelButton.bounds = CGRectMake(0, 0, 45, 45);
@@ -74,7 +77,7 @@
         self.alpha = 0.95;
         self.array = [buttArray mutableCopy];
         self.cancelButton.userInteractionEnabled = 0;
-        [UIView animateWithDuration:1.0 animations:^{
+        [UIView animateWithDuration:0.8 animations:^{
             self.cancelButton.transform = CGAffineTransformRotate(self.cancelButton.transform, M_PI_4);
         } completion:^(BOOL finished) {
             self.cancelButton.userInteractionEnabled = 1;
@@ -87,7 +90,7 @@
 - (void)removeAllThisView {
     self.cancelButton.userInteractionEnabled = 0;
     [self downButt];
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:downTime animations:^{
         self.cancelButton.transform = CGAffineTransformRotate(self.cancelButton.transform, -M_PI_4);
     } completion:^(BOOL finished) {
         self.cancelButton.userInteractionEnabled = 1;
@@ -127,7 +130,7 @@
             [self addSubview:obj];
         }];
     }
-    
+    downTime = 0.05 * self.array.count + 0.38;
     
 }
 
