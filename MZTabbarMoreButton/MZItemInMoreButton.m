@@ -53,13 +53,16 @@
 - (void)upbutt {
     CGRect frame = self.frame;
     NSLog(@"");
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        self.frame = CGRectMake(frame.origin.x, frame.origin.y - hiddenHeigh - 20 , frame.size.width, frame.size.height);
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.08 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            self.frame = CGRectMake(frame.origin.x, frame.origin.y - hiddenHeigh , frame.size.width, frame.size.height);
-        } completion:nil];
-    }];
+    [UIView animateWithDuration:0.38 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        self.frame = CGRectMake(frame.origin.x, frame.origin.y - hiddenHeigh , frame.size.width, frame.size.height);
+    } completion:nil];
+//    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+//        self.frame = CGRectMake(frame.origin.x, frame.origin.y - hiddenHeigh - 20 , frame.size.width, frame.size.height);
+//    } completion:^(BOOL finished) {
+//        [UIView animateWithDuration:0.08 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+//            self.frame = CGRectMake(frame.origin.x, frame.origin.y - hiddenHeigh , frame.size.width, frame.size.height);
+//        } completion:nil];
+//    }];
 }
 - (void)downbutt {
     CGRect frame = self.frame;
